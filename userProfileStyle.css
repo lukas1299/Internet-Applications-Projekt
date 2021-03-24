@@ -17,7 +17,51 @@ tr {
   height: 50px;
   background-color: #9dc6dd;
 }
-#tabela {
+#table {
+  border-style: solid;
+  height: 700px; 
+  width: 89%; 
+  float: right; 
+  background-color: #003366;
+  text-align: center;
+  height: auto;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+#wallet-table {
+  width: 50%;
+}
+
+#account {
+  border-style: solid;
+  display: block;
+  height: 700px; 
+  width: 89%; 
+  float: right; 
+  background-color: #707f8e;
+  text-align: center;
+  height: auto;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 16px;
+}
+#wallet {
+  border-style: solid;
+  display: none;
+  height: 700px; 
+  width: 89%; 
+  float: right; 
+  background-color: #707f8e;
+  text-align: center;
+  height: auto;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+#menu {
   border-style: solid;
   height: 700px; 
   width: 89%; 
@@ -44,6 +88,8 @@ ul {
   li {
     float: right;
     width: 100%;
+    user-select: none;
+    cursor: pointer;
   }
   
   li a {
@@ -55,6 +101,9 @@ ul {
     font-family: monospace;
     font-size: 16px;
     font-weight: bold;
+    user-select: none;
+    cursor: pointer;
+
   }
   
   li a:hover {

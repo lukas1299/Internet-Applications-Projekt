@@ -6,17 +6,23 @@
 <link rel="stylesheet" href="userProfileStyle.css">
 </head>
 <body>
-<!-- Client profile -->
+
+<!-- Menu -->
+
 <ul>
         
-    <li><a href="#log-popup">Home</a></li>
-    <li><a href="#crate">Profile</a></li>
+    <li><a >Home</a></li>
+    <li><a onclick="switchAccountPanel()">Account</a></li>
+    <li><a onclick="switchWalletPanel()">Wallet</a></li>
+    <li><a>Buy</a></li>
     
 </ul>
 
-<div id="tabela" >
+<!-- Table -->
+
+<div id="table">
     <table>
-        <tr style="background-color: #003366; color: white;">
+        <tr style="background-color: #00665f; color: white;">
             <td>Kryptowaluta</td>
             <td>Cena</td>
             <td>Zmiana(24h)</td>
@@ -31,7 +37,7 @@
             <td>1041.13 mld USD</td>
             <td>63.23 mld USD</td>
             <td>61683.8640 USD</td>
-        </tr>
+        <!-- </tr>
         <tr>
             <td>BCH</td>
             <td>Kurs sprzed tygodnia</td>
@@ -66,11 +72,42 @@
             <td>Kurs sprzed dnia</td>
             <td>Kurs sprzed godziny</td>
             <td>Kurs</td>
-        </tr>
+        </tr> -->
         
     </table>
 
 </div>
 
+<!-- Profile -->
+
+<div id="account" style="display: none;">
+
+    <img style="float: left;" src="user.png">
+
+</div>
+
+<!-- Wallet -->
+
+<div id="wallet">
+
+    <a style="float: right; font-size: 40px;">0</a>
+    <img style="float: right;" src="dollar.png">
+
+
+    <table id="wallet-table">
+        <tr><th>1</th><th>1</th><th>1</th></tr>
+        <tr><th>1</th><th>1</th><th>1</th></tr>
+        <tr><th>1</th><th>1</th><th>1</th></tr>
+        <tr><th>1</th><th>1</th><th>1</th></tr>
+        <tr><th>1</th><th>1</th><th>1</th></tr>
+        <tr><th>1</th><th>1</th><th>1</th></tr>
+        <tr><th>1</th><th>1</th><th>1</th></tr>
+        <tr><th>1</th><th>1</th><th>1</th></tr>
+
+    </table>
+
+</div>
+
 </body>
+<script src="userProfileScript.js"></script>
 </html>
