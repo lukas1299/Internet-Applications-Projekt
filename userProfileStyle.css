@@ -10,16 +10,23 @@ body {
 table {
   width: 100%; 
   border: 1px solid black; 
-  height: 100%;
+  height: 40%; 
 }
 
 tr {
   height: 50px;
-  background-color: #9dc6dd;
+  background-color: #4E5066;
+  color: white;
+ 
+  
 }
+.rank {
+  width: 40px;
+}
+
 #table {
   border-style: solid;
-  height: 700px; 
+  border: none;
   width: 89%; 
   float: right; 
   background-color: #003366;
@@ -30,8 +37,20 @@ tr {
   font-size: 16px;
 }
 
+#dollars {
+  float: right; 
+  font-size: 35px;
+  margin-right: 5%;
+}
+
 #wallet-table {
-  width: 50%;
+  border: none;
+  width: 70%;
+  margin-left: 5%;
+  margin-right: 15%;
+  font-size: 20px ;
+  vertical-align: middle;
+  
 }
 
 #account {
@@ -52,13 +71,20 @@ tr {
   display: none;
   height: 700px; 
   width: 89%; 
+  border: none;
   float: right; 
-  background-color: #707f8e;
+  background-color: #b5bcc4;
   text-align: center;
   height: auto;
   font-weight: bold;
   font-family: monospace;
   font-size: 16px;
+  border-radius: 15px;
+}
+
+#wallet tr:hover {
+  background-color: white;
+  color: #000;
 }
 
 #menu {
