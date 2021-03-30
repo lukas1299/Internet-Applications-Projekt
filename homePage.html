@@ -3,20 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <title>Strona</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="homePageStyle.css">
 </head>
 <body>
+
+  <!-- Menu -->
 
     <ul>
         
         <li><a onclick="FormVis()" href="#log-popup">LOG</a></li>
         <li><a onclick="CreateAccountFormVis()" href="#crate">CREATE ACCOUNT</a></li>
-        <li style="float: left"><a href="#about">ABOUT</a></li>
-        <li style="float: left;"><a href="#contact">CONTACT US</a></li>
+        <li style="float: left"><a href="#about">ABOUT US</a></li>
+        <li style="float: left;"><a href="#contact">CONTACT</a></li>
         
     </ul>
 
-    <img id="bcg" src="background2.jpg">
+    <div style="position: relative;">
+      <img id="bcg" src="img/background2.jpg">
+      <img style="position: absolute; left: 5%; top: 3%;" id="logo" src="img/logo_homepage.png">
+    </div>
+    
+
+    <!-- Login form -->
 
       <div class="log-popup"id="form-div" style="visibility: hidden;">
 
@@ -31,6 +39,8 @@
         </form>
 
       </div>
+
+      <!-- New account form -->
 
       <div class="new-account" id="create-account-form" style="display: none; position: fixed;">
         <div id="form-div2">
