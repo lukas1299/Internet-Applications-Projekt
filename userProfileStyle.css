@@ -43,6 +43,21 @@ tr {
   margin-right: 5%;
 }
 
+#exchange {
+  border-style: solid;
+  display: none;
+  width: 89%; 
+  border: none;
+  float: right; 
+  background-color: #b5bcc4;
+  text-align: center;
+  height: auto;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
 #buy {
   border-style: solid;
   display: none;
@@ -168,6 +183,7 @@ ul {
     transition: border-color 0.2s;
   
     }
+
     #crypto {
       
       position: relative;
